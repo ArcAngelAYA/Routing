@@ -143,3 +143,43 @@ crypto key generate rsa
 512 >> 1024
 ip ssh version 2
 
+
+hash calc
+arc
+404fcfb394d23199f6d95f1f36bd2beb6df8564f993f44517f6015fcd16101a9
+
+yVM download
+
+
+@VPNJP:
+config t
+no logging console
+no ip domain-lookup
+ip route 0.0.0.0 0.0.0.0 200.0.0.20
+int gi1
+ip add 200.0.0.10 255.255.255.0
+no shut
+int gi3
+ip add 10.10.10.1 255.255.255.0
+no shut
+
+@VPNPH
+config t
+no logging console
+no ip domain-lookup
+ip route 0.0.0.0 0.0.0.0 200.0.0.10
+int gi1
+ip add 200.0.0.10 255.255.255.0
+no shut
+int gi3
+ip add 10.20.20.1 255.255.255.0
+no shut
+
+
+BLDG JP
+sudo ifconfig eth0 10.10.10.10 netmask 255.255.255.0 up
+sudo route add default gw 10.10.10.1
+
+BLDG PH
+sudo ifconfig eth0 10.20.20.20 netmask 255.255.255.0 up
+sudo route add default gw 10.20.20.1
