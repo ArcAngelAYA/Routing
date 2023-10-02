@@ -146,9 +146,9 @@ BGP: isp1:
 config t
 router bgp 45
 bgp log-neighbor-changes
-neighboor 24.2.4.2 remote-as 2
-neighboor 45.4.5.5 remote-as 45
-neighboor 208.8.8.1 remote-as 1
+neighbor 24.2.4.2 remote-as 2
+neighbor 45.4.5.5 remote-as 45
+neighbor 208.8.8.1 remote-as 1
 network 208.8.8.0 mask 255.255.255.0
 network 24.2.4.0 mask 255.255.255.0
 network 44.44.44.44 mask 255.255.255.255
