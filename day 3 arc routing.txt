@@ -163,10 +163,10 @@ BGP: isp2:
 config t
 router bgp 2
 bgp log-neighbor-changes
-neighboor 24.2.4.4 remote-as 45
-neighboor 25.2.5.5 remote-as 45
-neighboor 32.3.2.3 remote-as 3
-neighboor 207.7.7.1 remote-as 1
+neighbor 24.2.4.4 remote-as 45
+neighbor 25.2.5.5 remote-as 45
+neighbor 32.3.2.3 remote-as 3
+neighbor 207.7.7.1 remote-as 1
 network 207.0.0.0
 network 22.22.22.22 mask 255.255.255.255
 network 24.2.4.0 mask 255.255.255.0
@@ -181,9 +181,9 @@ BGPL ispf3:
 config t
 router bgp 3
 bgp log-neighbor-changes
-neighboor 32.3.2.2 remote-as 2
-neighboor 35.3.5.5 remote-as 45
-neighboor 209.9.9.1 remote-as 1
+neighbor 32.3.2.2 remote-as 2
+neighbor 35.3.5.5 remote-as 45
+neighbor 209.9.9.1 remote-as 1
 network 209.9.9.0
 network 32.3.2.0 mask 255.255.255.0
 network 33.33.33.33 mask 255.255.255.255
