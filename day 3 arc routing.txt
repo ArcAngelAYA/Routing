@@ -172,7 +172,7 @@ network 22.22.22.22 mask 255.255.255.255
 network 24.2.4.0 mask 255.255.255.0
 netowrk 25.2.5.0 mask 255.255.255.0
 !Fake Internet
-netowrk 0.0.0.0
+network 0.0.0.0
 ip route 0.0.0.0 0.0.0.0 null 0
 ip route 10.0.0.0 255.0.0.0 207.7.7.1
 end
