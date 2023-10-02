@@ -172,7 +172,7 @@ network 22.22.22.22 mask 255.255.255.255
 network 24.2.4.0 mask 255.255.255.0
 netowrk 25.2.5.0 mask 255.255.255.0
 !Fake Internet
-network 0.0.0.0
+network  0.0.0.0
 ip route 0.0.0.0 0.0.0.0 null 0
 ip route 10.0.0.0 255.0.0.0 207.7.7.1
 end
@@ -189,7 +189,7 @@ network 32.3.2.0 mask 255.255.255.0
 network 33.33.33.33 mask 255.255.255.255
 netowrk 35.3.5.0 mask 255.255.255.0
 !Fake Internet
-netowrk 0.0.0.0
+network  0.0.0.0
 ip route 0.0.0.0 0.0.0.0 null 0
 ip route 10.0.0.0 255.0.0.0 209.9.9.1
 end
@@ -205,9 +205,9 @@ neighbor 35.3.5.3 remore-as 3
 neighbor 45.4.5.4 remore-as 45
 network 8.8.8.8 mask 255.255.255.255
 network 55.55.55.55 mask 255.255.255.255
-netowrk 25.2.5.0 mask 255.255.255.0
-netowrk 35.3.5.0 mask 255.255.255.0
-netowrk 45.4.5.0 mask 255.255.255.0
+network  25.2.5.0 mask 255.255.255.0
+network  35.3.5.0 mask 255.255.255.0
+network  45.4.5.0 mask 255.255.255.0
 
 
 
